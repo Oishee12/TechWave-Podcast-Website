@@ -155,4 +155,32 @@ nav hr{
     .nav-img{
     width: 100%;
     }
+
+    /* banner */
+    .banner-info{
+        padding-top: 20px;
+    }
+    .banner-heading{
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+    .banner-img{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .circle-img{  
+        width: 30%;
+    }
+    .mic-img{
+        width: 10%;
+    }
+    .new-badge{
+    position: absolute;
+    bottom: 75%;
+    left: 56%;
+    padding: 4px 8px;
+    font-size: 1rem;
+} 
+ 
 }
