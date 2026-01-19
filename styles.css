@@ -31,11 +31,11 @@ body {
 .none{
     display: none;
 }
-.white, .rating-para{
-    color: rgba(255, 255, 255, 1);
+.center{
+    text-align: center;
 }
-.green, .rating-heading{
-    color: rgba(0, 255, 136, 1);
+.bg{
+    background-color:rgba(53, 17, 101, 0.4);
 }
 
 /* shared class */
@@ -44,7 +44,12 @@ body {
     margin: 0 auto;
     border: 1px solid gray;
 }
-
+.white, .rating-para, .choose-heading{
+    color: rgba(255, 255, 255, 1);
+}
+.green, .rating-heading{
+    color: rgba(0, 255, 136, 1);
+}
 
 /* navbar */
 .nav-info{
@@ -169,6 +174,44 @@ nav ul li a{
 }
 
 
+/* techwave section */
+.techwave-section{
+    background-color: rgba(35, 14, 61, 1);
+}
+.choose-card-container{
+    padding-top: 20px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.choose-card-one, .choose-card-two, .choose-card{
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.choose-card-one{
+    grid-row: span 2;
+}
+.choose-card-two{
+    grid-column: span 2;
+}
+.choose-img{
+    height: 40px;
+    width: 40px;
+    padding-bottom: 10px;
+}
+.choose-heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.choose-para, .podcast-para, .podcast-para-last, .rating-para, .tech-para, #hidden-para{
+    color: rgba(255, 255, 255, 0.624);
+}
+
+
 
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
@@ -235,5 +278,17 @@ nav ul li a{
     .podcast-rating{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    }
+
+    /* techwave */
+    .choose-card-container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    }
+    .choose-card-one{
+    grid-row: 1;
+    }
+    .choose-card-two{
+    grid-column: 1;
     }
 }
