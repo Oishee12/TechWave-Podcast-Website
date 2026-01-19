@@ -31,10 +31,10 @@ body {
 .none{
     display: none;
 }
-.white{
+.white, .rating-para{
     color: rgba(255, 255, 255, 1);
 }
-.green{
+.green, .rating-heading{
     color: rgba(0, 255, 136, 1);
 }
 
@@ -154,6 +154,20 @@ nav ul li a{
 #hidden-para{
     display: none;
 }
+.rating-heading{
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+.rating-para{
+    font-weight: 400;
+}
+.podcast-rating{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 
 
 /* responsive for mobile */
@@ -212,5 +226,14 @@ nav ul li a{
     }
     #hidden-para{
         display: block;
+    }
+    .rating-heading{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 5px;
+    }
+    .podcast-rating{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     }
 }
