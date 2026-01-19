@@ -16,7 +16,7 @@ body {
 .container{
     max-width: 1240px;
     margin: 0px auto;
-    padding: 50px 20px;
+    padding: 40px 15px;
     box-sizing: border-box;
     border: 1px solid red;
 }
@@ -30,6 +30,9 @@ body {
 }
 .none{
     display: none;
+}
+.white{
+    color: rgba(255, 255, 255, 1);
 }
 /* shared class */
 
@@ -89,11 +92,7 @@ nav hr{
     background-color: rgba(35, 14, 61, 1);
     background: url('./assets/hero-bg.png');
     background-repeat: no-repeat;
-    /* background-position: center; */
     background-size: cover;
-}
-.banner{
-   
 }
 .hero-circle{
     position: relative;
@@ -102,7 +101,7 @@ nav hr{
     position: absolute;
     top: 50%;
     left: 50%;
-      transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
  .new-badge{
     position: absolute;
@@ -116,6 +115,26 @@ nav hr{
     color: rgba(26, 11, 46, 1);
     border: none;
 } 
+.banner-info{
+    text-align: center;
+}
+.banner-heading{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+   padding-bottom: 10px;
+}
+.banner-btn{
+    padding-top: 20px;
+    gap: 10px;
+}
+.subscribe-btn{
+    background: transparent;
+    color: rgba(0, 255, 136, 1);
+    border: 1px solid rgba(0, 255, 136, 1);
+}
+
+
 
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
