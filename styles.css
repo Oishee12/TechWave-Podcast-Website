@@ -16,7 +16,7 @@ body {
 .container{
     max-width: 1240px;
     margin: 0px auto;
-    padding: 40px 20px;
+    padding: 50px 20px;
     box-sizing: border-box;
     border: 1px solid red;
 }
@@ -28,7 +28,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.none{
+    display: none;
+}
 /* shared class */
 
 /* navbar */
@@ -82,7 +84,38 @@ nav hr{
     display: none;
 }
 
-
+/* banner section */
+.banner-section{
+    background-color: rgba(35, 14, 61, 1);
+    background: url('./assets/hero-bg.png');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+.banner{
+   
+}
+.hero-circle{
+    position: relative;
+}
+.microphone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+      transform: translate(-50%, -50%);
+}
+ .new-badge{
+    position: absolute;
+    bottom: 85%;
+    left: 56%;
+    background-color: rgba(0, 255, 136, 1);
+    padding: 8px 15px;
+    border-radius: 1000px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgba(26, 11, 46, 1);
+    border: none;
+} 
 
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
