@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter{
+  font-family: "Inter", sans-serif;
+}
+
+
+/* shared styles */
+.container{
+    max-width: 1240px;
+    margin: 0px auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+.flex{
+    display: flex;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* navbar */
+.nav-info{
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-list{
+   gap: 30px;
+}
