@@ -34,7 +34,17 @@ body {
 .white{
     color: rgba(255, 255, 255, 1);
 }
+.green{
+    color: rgba(0, 255, 136, 1);
+}
+
 /* shared class */
+.nav-hr{
+    max-width: 1239px;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+
 
 /* navbar */
 .nav-info{
@@ -77,11 +87,6 @@ nav ul li a{
     border-radius: 10000px;
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     border: none;
-}
-nav hr{
-    max-width: 1239px;
-    margin: 0 auto;
-    border: 1px solid gray;
 }
 #ham-nav{
     display: none;
@@ -134,6 +139,21 @@ nav hr{
     border: 1px solid rgba(0, 255, 136, 1);
 }
 
+/* Podcast Section */
+.podcast-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.podcast-para{
+    padding-bottom: 10px;
+}
+.podcast-para-last{
+    padding-top: 20px;
+}
+#hidden-para{
+    display: none;
+}
 
 
 /* responsive for mobile */
@@ -168,7 +188,6 @@ nav hr{
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    
     .circle-img{  
         width: 30%;
     }
@@ -181,6 +200,17 @@ nav hr{
     left: 56%;
     padding: 4px 8px;
     font-size: 1rem;
-} 
- 
+    } 
+
+    /* Podcast */
+    .podcast-heading{
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+    .podcast-para{
+        display: none;
+    }
+    #hidden-para{
+        display: block;
+    }
 }
