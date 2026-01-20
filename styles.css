@@ -210,7 +210,7 @@ nav ul li a{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
-.choose-card-one, .choose-card-two, .choose-card{
+.choose-card-one, .choose-card-two, .choose-card, .host-card{
     border-radius: 30px;
     padding: 30px;
     display: flex;
@@ -218,9 +218,17 @@ nav ul li a{
 }
 .choose-card-one{
     grid-row: span 2;
+    transition:transform 1s;
+}
+.choose-card-one:hover, .choose-card-two:hover, .choose-card:hover{
+    transform: scale(1.1);
 }
 .choose-card-two{
     grid-column: span 2;
+    transition:transform 1s;
+}
+.choose-card{
+     transition:transform 1s;
 }
 .choose-img{
     height: 40px;
@@ -405,6 +413,7 @@ nav ul li a{
     .choose-card-two{
     grid-column: 1;
     }
+    
 
     /* features */
     .youtube-video{
@@ -430,6 +439,9 @@ nav ul li a{
     gap: 10px;
     justify-content: center;
     align-items: center;
+    }
+    .host-card{
+
     }
 
     /* footer */
