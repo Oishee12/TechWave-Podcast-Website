@@ -108,12 +108,35 @@ nav ul li a{
 }
 .hero-circle{
     position: relative;
+
 }
 .microphone{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+@keyframes microphone {
+    from{
+        transform:translate(-50%, -50%) scale(0.5);
+    }
+    to{
+        transform:translate(-50%, -50%) scale(1);
+    }
+}
+.mic-img{
+    animation: microphone 4s ease-in-out 2s infinite alternate;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.circle-img{
+    animation: rotate 6s linear infinite; 
 }
  .new-badge{
     position: absolute;
