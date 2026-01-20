@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+*::before{
+    box-sizing: border-box;
+}
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .inter{
@@ -258,7 +261,7 @@ nav ul li a{
     font-weight: 700;
 }
 .footer-heading{
-    padding-bottom: 33px;
+    padding-bottom: 30px;
 }
 .footer-para{
      color: rgba(255, 255, 255, 0.624);
@@ -266,9 +269,22 @@ nav ul li a{
 }
 .footer-icon-container{
     margin-bottom: 40px;
+    width: 70px;
+    justify-content: flex-start;
+    gap: 3px;
+}
+#apple{
+    width: 110px;
+}
+.footer-special-container{
+    display: flex;
+    justify-content: center;
 }
 .footer-info{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 5px;
+    width: 240px; 
 }
  .footer-container{
     position: relative;
@@ -401,4 +417,47 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     }
+
+    /* footer */
+    .big-font{
+    font-size: 3rem;
+    }
+    .footer-heading{
+    padding-bottom: 35px;
+    }
+.footer-icon-container{
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+.footer-info{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: max-content;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+ .footer-container{
+    position: relative;
+    z-index: 1;
+}
+.footer-section{
+    margin-top: 30px;
+    padding-top: 30px;
+    position: relative;
+    min-height: 36vh;
+    background-color:rgba(53, 17, 101, 0.4);
+}
+.footer-section::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('./assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    filter: grayscale(100%);
+    mix-blend-mode: lighten;
+    opacity: 0.6;
+}
 }
