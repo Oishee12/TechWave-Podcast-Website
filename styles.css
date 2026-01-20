@@ -234,15 +234,11 @@ nav ul li a{
 
 /* host section */
 .host-container{
-    gap: 50px;
+    gap: 30px;
 }
 .host-icon-container{
     display: flex;
     gap: 5px;
-}
-.host-icon{
-    /* width: 100%;
-    height: 100%; */
 }
 .host-icon-div{
     height: 20px;
