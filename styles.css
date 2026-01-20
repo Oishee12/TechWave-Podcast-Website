@@ -21,7 +21,6 @@ body {
     margin: 0px auto;
     padding: 40px 15px;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 .flex{
     display: flex;
@@ -287,7 +286,6 @@ nav ul li a{
 .footer-section{
     padding-top: 30px;
     position: relative;
-    /* min-height: 36vh; */
     background-color:rgba(53, 17, 101, 0.4);
 }
 .footer-section::before{
@@ -412,7 +410,6 @@ nav ul li a{
     }
 
     /* footer */
- 
     .footer-info{
     flex-direction: column;
 }
