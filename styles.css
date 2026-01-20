@@ -232,6 +232,31 @@ nav ul li a{
     padding: 10px 25px 25px;
 }
 
+/* host section */
+.host-container{
+    gap: 50px;
+}
+.host-icon-container{
+    display: flex;
+    gap: 5px;
+}
+.host-icon{
+    /* width: 100%;
+    height: 100%; */
+}
+.host-icon-div{
+    height: 20px;
+    width: 20px;  
+    padding: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.624);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
 
 
 /* responsive for mobile */
@@ -325,5 +350,17 @@ nav ul li a{
     .features-card{
     border-radius: 24px;
     width: 90%;
-}
+    }
+
+    /* host */
+    .host-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .host-icon-container{
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    }
 }
