@@ -174,8 +174,8 @@ nav ul li a{
 }
 
 
-/* techwave section */
-.techwave-section{
+/* tech wave section */
+.tech-wave-section{
     background-color: rgba(35, 14, 61, 1);
 }
 .choose-card-container{
@@ -250,6 +250,48 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+}
+
+/* footer section */
+.big-font{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.footer-heading{
+    padding-bottom: 33px;
+}
+.footer-para{
+     color: rgba(255, 255, 255, 0.624);
+     font-size: smaller;
+}
+.footer-icon-container{
+    margin-bottom: 40px;
+}
+.footer-info{
+    gap: 5px;
+}
+ .footer-container{
+    position: relative;
+    z-index: 1;
+}
+.footer-section{
+    margin-top: 30px;
+    padding-top: 30px;
+    position: relative;
+    min-height: 36vh;
+    background-color:rgba(53, 17, 101, 0.4);
+}
+.footer-section::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('./assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    filter: grayscale(100%);
+    mix-blend-mode: lighten;
+    opacity: 0.6;
 }
 
 
